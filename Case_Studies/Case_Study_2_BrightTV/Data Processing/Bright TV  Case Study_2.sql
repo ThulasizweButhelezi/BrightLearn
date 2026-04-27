@@ -106,5 +106,4 @@ SELECT B.Province,
 FROM brightlearn_case_studies.case_studies.bright_tv_viewership AS A
 LEFT JOIN brightlearn_case_studies.case_studies.bright_tv_user_profile AS B
 ON A.UserID0=B.UserID
-WHERE A.UserID0 IS NOT NULL OR B.USERID IS NOT NULL
 GROUP BY B.Province,B.Gender,B.Race,A.RecordDate2,A.Channel2,A.`Duration 2`,B.Age;
